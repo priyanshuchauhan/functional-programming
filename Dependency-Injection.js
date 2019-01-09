@@ -1,7 +1,7 @@
 const assert = require('assert')
 
 function getAnimals(fetch, id) {
-  return fetch('http://api.animalfarmgame.com/animals/' + id)
+  return fetch('http://api.foo.com/animals/' + id)
     .then(response => response.json())
     .then(data => data.results[0])
 }
@@ -11,7 +11,7 @@ describe('getAnimals', () => {
     const fakeFetch = url => {
       assert(
         url ===
-        'http://api.animalfarmgame.com/animals/123'
+        'http://api.foo.com/animals/123'
       )
       return new Promise(function(resolve) {
 
