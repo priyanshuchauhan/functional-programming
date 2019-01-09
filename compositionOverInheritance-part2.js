@@ -48,10 +48,10 @@ scorcher.cast('fireball');    // Scorcher casts fireball!
 console.log(scorcher.mana)    // 99
 
 kv = fighter('KV')
-kv.fight();              // Slasher slashes at the foe!
+kv.fight();              // kv slashes at the foe!
 console.log(kv.stamina)  // 99
 
 
 ironMaiden = rockband('Iron Maiden');   
-ironMaiden.fight();               // Roland slashes at the foe!
-ironMaiden.cast('Holy Light');    // Roland casts Holy Light!
+ironMaiden.fight();               // ironMaiden slashes at the foe!
+ironMaiden.cast('Holy Light');    // ironMaiden casts Holy Light!
