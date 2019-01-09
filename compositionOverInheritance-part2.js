@@ -32,10 +32,26 @@ const mage = (name) => {
   return Object.assign(state, canCast(state));
 }
 
+const ninja = (name) => {
+  let state = {
+    name,
+    health: 100,
+    mana: 100,
+    stamina: 100
+  }
+  
+  return Object.assign(state, canCast(state), canFight(state));
+}
+
 scorcher = mage('Scorcher')
 scorcher.cast('fireball');    // Scorcher casts fireball!
 console.log(scorcher.mana)    // 99
 
-slasher = fighter('Slasher')
-slasher.fight();              // Slasher slashes at the foe!
-console.log(slasher.stamina)  // 99
+kv = fighter('KV')
+kv.fight();              // Slasher slashes at the foe!
+console.log(kv.stamina)  // 99
+
+
+foo = ninja('Foo Figher');   
+foo.fight();               // Roland slashes at the foe!
+foo.cast('Holy Light');    // Roland casts Holy Light!
