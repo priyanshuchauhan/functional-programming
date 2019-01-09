@@ -32,7 +32,7 @@ const mage = (name) => {
   return Object.assign(state, canCast(state));
 }
 
-const ninja = (name) => {
+const rockband = (name) => {
   let state = {
     name,
     health: 100,
@@ -52,6 +52,6 @@ kv.fight();              // Slasher slashes at the foe!
 console.log(kv.stamina)  // 99
 
 
-foo = ninja('Foo Figher');   
-foo.fight();               // Roland slashes at the foe!
-foo.cast('Holy Light');    // Roland casts Holy Light!
+ironMaiden = rockband('Iron Maiden');   
+ironMaiden.fight();               // Roland slashes at the foe!
+ironMaiden.cast('Holy Light');    // Roland casts Holy Light!
