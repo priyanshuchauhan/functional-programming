@@ -29,10 +29,10 @@ class Mage extends Character {
   }
 }
 
-zapper = new Mage('Zapper');
-thumper = new Fighter('Thumper');
+morto = new Mage('Morto');
+kv = new Fighter('KV');
 
-zapper.cast();              // Zapper casts a fireball!
-console.log(zapper.mana);   // 99
-thumper.fight();                // Thumper takes a mighty swing!
+morto.cast();              // Zapper casts a fireball!
+console.log(morto.mana);   // 99
+kv.fight();                // Thumper takes a mighty swing!
 console.log(thumper.stamina);   // 99
